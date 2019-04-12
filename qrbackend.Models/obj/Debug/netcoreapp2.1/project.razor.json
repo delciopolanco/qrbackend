@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "c:\\Users\\DP312640\\Documents\\Proyects\\QRApp\\qr-backend\\qrbackend.Models\\qrbackend.Models.csproj",
+  "TargetFramework": "netcoreapp2.1",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}

@@ -1,0 +1,247 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>qrbackend.Api</name>
+    </assembly>
+    <members>
+        <member name="T:qr_backend.Controllers.AuthenticationController">
+            <summary>
+            Api validacion, registro y authenticacion de clientes.
+            </summary>
+        </member>
+        <member name="M:qr_backend.Controllers.AuthenticationController.Login(qrbackend.Models.ViewModels.Front.Login)">
+            <summary>
+            Metodo de authenticación usuario empresas y usuario personas
+            </summary>
+            <remarks>
+            Retorna jwtToken y RefrehsToken para loguearse en el sistema
+            </remarks>
+            <param name="login"></param>
+            <returns></returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:qr_backend.Controllers.AuthenticationController.GetKeyCard">
+            <summary>
+            Metodo para recuperar coordenada de tarjetas de claves
+            </summary>
+            <remarks>
+            Retorna el número de la coordenada de la tarjeta de claves
+            </remarks>
+            <returns>Coordenaa tarjeta de claves </returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:qr_backend.Controllers.AuthenticationController.ValidatePersonalKeyCard(qrbackend.Models.ViewModels.Front.ValidateKeyCard)">
+            <summary>
+            Metodo para validar la coordenada de tarjetas de claves y la posición
+            </summary>
+            <remarks>
+            Retorna true o false
+            </remarks>
+            <returns>Coordenaa tarjeta de claves </returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:qr_backend.Controllers.AuthenticationController.RefreshToken(qrbackend.Models.ViewModels.Front.SaveJwtToken)">
+            <summary>
+            Metodo para obtener un nuevo token a partir del refresh Token
+            </summary>
+            <remarks>
+            Retorna un nuevo token y un nuevo refresh Token
+            </remarks>
+            <returns>Coordenaa tarjeta de claves </returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:qr_backend.Controllers.ProfileController.Save(qrbackend.Models.ViewModels.Front.SaveNotificationType)">
+            <summary>
+            Metodo para registrar el tipo de notificacion para token digital del usuario
+            </summary>
+            <remarks>
+            Retorna http response 200
+            </remarks>
+            <returns></returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:qr_backend.Controllers.ProfileController.GetByID(System.String)">
+            <summary>
+            Metodo para validar si el PaymeID existe o ya se encuentra registrado
+            </summary>
+            <remarks>
+            Retorna http response 200
+            </remarks>
+            <returns></returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:qr_backend.Controllers.ProfileController.Save(qrbackend.Models.ViewModels.Front.SavePaymeId)">
+            <summary>
+            Metodo para registrar el paymeID del usuario
+            </summary>
+            <remarks>
+            Retorna http response 200
+            </remarks>
+            <returns></returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:qr_backend.Controllers.ProfileController.GetCompanies">
+            <summary>
+            Servicio para obtener el listado de empresas de un usuario
+            </summary>
+            <remarks>
+            Retorna http response 200
+            </remarks>
+            <returns></returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:qr_backend.Controllers.ProfileController.Get">
+            <summary>
+            Servicio para recuperar datos del perfil
+            </summary>
+            <remarks>
+            Retorna http response 200
+            </remarks>
+            <returns></returns>
+            <response code="200"></response>
+        </member>
+        <member name="T:qrbackend.Api.Controllers.ClientController">
+            <summary>
+            Manejador de Acciones del cliente
+            </summary>
+        </member>
+        <member name="M:qrbackend.Api.Controllers.ClientController.#ctor(qrbackend.Api.Services.BrokerHelper.IBroker)">
+            <summary>
+            Contructor de la clase
+            </summary>
+            <param name="broker"></param>
+        </member>
+        <member name="M:qrbackend.Api.Controllers.ClientController.GetBenericiairyList">
+            <summary>
+            Metodo para obtener el listado de beneficiarios
+            </summary>
+            <remarks>
+            Retorna http response 200
+            </remarks>
+            <returns></returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:qrbackend.Api.Controllers.ClientController.GetBenericiairy(System.String)">
+            <summary>
+            Metodo para obtener un beneficiario y sus productos asociados
+            </summary>
+            <remarks>
+            Retorna http response 200
+            </remarks>
+            <returns></returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:qrbackend.Api.Controllers.ClientController.SaveBeneficiary(qrbackend.Models.ViewModels.Front.AddBeneficiary)">
+            <summary>
+            Metodo para guardar el beneficiario
+            </summary>
+            <remarks>
+            Retorna http response 200
+            </remarks>
+            <returns></returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:qrbackend.Api.Controllers.ClientController.UpdateBeneficiary(qrbackend.Models.ViewModels.Front.UpdateBeneficiary)">
+            <summary>
+            Metodo para actualizar el beneficiario
+            </summary>
+            <remarks>
+            Retorna http response 200
+            </remarks>
+            <returns></returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:qrbackend.Api.Controllers.ClientController.DeleteBeneficiary(System.String)">
+            <summary>
+            Metodo para eliminar el beneficiario
+            </summary>
+            <remarks>
+            Retorna http response 200
+            </remarks>
+            <returns></returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:qrbackend.Api.Controllers.ClientController.GetProducts">
+            <summary>
+            Metodo para retornar los productos de un cliente
+            </summary>
+            <remarks>
+            Retorna http response 200
+            </remarks>
+            <returns></returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:qrbackend.Api.Controllers.ClientController.GetAccountInfo(System.String)">
+            <summary>
+            Metodo para recuperar la info asociada a cuentas y tarjetas.
+            </summary>
+            <remarks>
+            Retorna http response 200
+            </remarks>
+            <returns></returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:qrbackend.Api.Controllers.ClientController.GetPaymeIdInfo(System.String)">
+            <summary>
+            Metodo para recuperar la info al PaymeId.
+            </summary>
+            <remarks>
+            Retorna http response 200
+            </remarks>
+            <returns></returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:qrbackend.Api.Controllers.ClientController.SaveImage(qrbackend.Models.ViewModels.Front.SaveImage)">
+            <summary>
+            Metodo para guardar imagen del Cliente
+            </summary>
+            <remarks>
+            Retorna http response 200
+            </remarks>
+            <returns></returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:qrbackend.Api.Controllers.ClientController.SavingsPlan(qrbackend.Models.ViewModels.Front.Client.SavingPlan)">
+            <summary>
+            Metodo para guardar imagen del Cliente
+            </summary>
+            <remarks>
+            Retorna http response 200
+            </remarks>
+            <returns></returns>
+            <response code="200"></response>
+        </member>
+        <member name="T:qrbackend.Api.Controllers.RegisterController">
+            <summary>
+            Api registro de cliente
+            </summary>
+        </member>
+        <member name="M:qrbackend.Api.Controllers.RegisterController.Validate(Microsoft.AspNetCore.Http.IFormFile,qrbackend.Models.Enums.DocumentType)">
+            <summary>
+            Validacion del registro con Tecnologia OCR
+            </summary>
+        </member>
+        <member name="M:qrbackend.Api.Controllers.RegisterController.Register(qrbackend.Models.ViewModels.Front.FrontClientRegistration)">
+            <summary>
+            Registro de nuevos clientes
+            </summary>
+        </member>
+        <member name="T:qrbackend.Api.Controllers.TransactionController">
+            <summary>
+            Api validacion, registro y obentecion de transacciones.
+            </summary>
+        </member>
+        <member name="M:qrbackend.Api.Controllers.TransactionController.GetToken(System.String)">
+            <summary>
+            Obtencion de un nuevo token de transación.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:qrbackend.Api.Controllers.TransactionController.GetTransactions(System.String)">
+            <summary>
+            Obtiene el listado de transacciones del usuario.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

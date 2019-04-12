@@ -1,0 +1,42 @@
+[
+    {
+        "id": 22361600011,
+        "destiny": "Green Bowl",
+        "type": 2,
+        "date": "02/19/2019",
+        "currency": "RD",
+        "currencySymbol": "$",
+        "balance": "827.47",
+        "status": "Completado"
+    },
+    {
+        "id": 22361600011,
+        "destiny": "Green Bowl",
+        "type": 1,
+        "date": "03/19/2019",
+        "currency": "RD",
+        "currencySymbol": "$",
+        "balance": "827.47",
+        "status": "Completado"
+    },
+    {
+        "id": 22361600011,
+        "destiny": "Green Bowl",
+        "type": 2,
+        "date": "03/22/2019",
+        "currency": "RD",
+        "currencySymbol": "$",
+        "balance": "827.47",
+        "status": "Completado"
+    },
+    {
+        "id": 22361600011,
+        "destiny": "Green Bowl",
+        "type": 1,
+        "date": "03/24/2019",
+        "currency": "RD",
+        "currencySymbol": "$",
+        "balance": "827.47",
+        "status": "Completado"
+    }
+]

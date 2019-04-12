@@ -1,0 +1,41 @@
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qrbackend.Models\bin\Release\netcoreapp2.1\qrbackend.Models.deps.json
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qrbackend.Models\bin\Release\netcoreapp2.1\qrbackend.Models.dll
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qrbackend.Models\bin\Release\netcoreapp2.1\qrbackend.Models.pdb
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qrbackend.Models\bin\Release\netcoreapp2.1\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qrbackend.Models\bin\Release\netcoreapp2.1\Microsoft.AspNetCore.Mvc.Abstractions.dll
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qrbackend.Models\bin\Release\netcoreapp2.1\Newtonsoft.Json.dll
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qrbackend.Models\bin\Release\netcoreapp2.1\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qrbackend.Models\bin\Release\netcoreapp2.1\Microsoft.AspNetCore.Mvc.Abstractions.xml
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qrbackend.Models\bin\Release\netcoreapp2.1\Newtonsoft.Json.xml
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qrbackend.Models\obj\Release\netcoreapp2.1\qrbackend.Models.csprojAssemblyReference.cache
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qrbackend.Models\obj\Release\netcoreapp2.1\qrbackend.Models.csproj.CoreCompileInputs.cache
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qrbackend.Models\obj\Release\netcoreapp2.1\qrbackend.Models.AssemblyInfoInputs.cache
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qrbackend.Models\obj\Release\netcoreapp2.1\qrbackend.Models.AssemblyInfo.cs
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qrbackend.Models\obj\Release\netcoreapp2.1\qrbackend.Models.csproj.CopyComplete
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qrbackend.Models\obj\Release\netcoreapp2.1\qrbackend.Models.dll
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qrbackend.Models\obj\Release\netcoreapp2.1\qrbackend.Models.pdb
+C:\QRProject\qr-backend\qrbackend.Models\bin\Release\netcoreapp2.1\qrbackend.Models.deps.json
+C:\QRProject\qr-backend\qrbackend.Models\bin\Release\netcoreapp2.1\qrbackend.Models.dll
+C:\QRProject\qr-backend\qrbackend.Models\bin\Release\netcoreapp2.1\qrbackend.Models.pdb
+C:\QRProject\qr-backend\qrbackend.Models\bin\Release\netcoreapp2.1\Microsoft.AspNetCore.Http.Features.dll
+C:\QRProject\qr-backend\qrbackend.Models\bin\Release\netcoreapp2.1\Microsoft.AspNetCore.Mvc.Abstractions.dll
+C:\QRProject\qr-backend\qrbackend.Models\bin\Release\netcoreapp2.1\Newtonsoft.Json.dll
+C:\QRProject\qr-backend\qrbackend.Models\bin\Release\netcoreapp2.1\Microsoft.AspNetCore.Http.Features.xml
+C:\QRProject\qr-backend\qrbackend.Models\bin\Release\netcoreapp2.1\Microsoft.AspNetCore.Mvc.Abstractions.xml
+C:\QRProject\qr-backend\qrbackend.Models\bin\Release\netcoreapp2.1\Newtonsoft.Json.xml
+C:\QRProject\qr-backend\qrbackend.Models\obj\Release\netcoreapp2.1\qrbackend.Models.csprojAssemblyReference.cache
+C:\QRProject\qr-backend\qrbackend.Models\obj\Release\netcoreapp2.1\qrbackend.Models.csproj.CoreCompileInputs.cache
+C:\QRProject\qr-backend\qrbackend.Models\obj\Release\netcoreapp2.1\qrbackend.Models.AssemblyInfoInputs.cache
+C:\QRProject\qr-backend\qrbackend.Models\obj\Release\netcoreapp2.1\qrbackend.Models.AssemblyInfo.cs
+C:\QRProject\qr-backend\qrbackend.Models\obj\Release\netcoreapp2.1\qrbackend.Models.csproj.CopyComplete
+C:\QRProject\qr-backend\qrbackend.Models\obj\Release\netcoreapp2.1\qrbackend.Models.dll
+C:\QRProject\qr-backend\qrbackend.Models\obj\Release\netcoreapp2.1\qrbackend.Models.pdb
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qrbackend.Models\bin\Release\netcoreapp2.1\qrbackend.Models.deps.json
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qrbackend.Models\bin\Release\netcoreapp2.1\qrbackend.Models.dll
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qrbackend.Models\bin\Release\netcoreapp2.1\qrbackend.Models.pdb
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qrbackend.Models\obj\Release\netcoreapp2.1\qrbackend.Models.csprojAssemblyReference.cache
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qrbackend.Models\obj\Release\netcoreapp2.1\qrbackend.Models.csproj.CoreCompileInputs.cache
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qrbackend.Models\obj\Release\netcoreapp2.1\qrbackend.Models.AssemblyInfoInputs.cache
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qrbackend.Models\obj\Release\netcoreapp2.1\qrbackend.Models.AssemblyInfo.cs
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qrbackend.Models\obj\Release\netcoreapp2.1\qrbackend.Models.dll
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qrbackend.Models\obj\Release\netcoreapp2.1\qrbackend.Models.pdb

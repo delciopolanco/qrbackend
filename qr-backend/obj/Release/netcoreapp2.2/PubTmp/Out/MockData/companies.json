@@ -1,0 +1,29 @@
+{
+    "defaultCompany": 597459,
+    "companies": [
+        {
+            "id": 0,
+            "name": "Todas las Empresas"
+        },
+        {
+            "id": 57807,
+            "name": "ACERO ESTRELLA, S.R."
+        },
+        {
+            "id": 597459,
+            "name": "ACROMAX DOMINICANA,"
+        },
+        {
+            "id": 1346953,
+            "name": "AFI BHD"
+        },
+        {
+            "id": 1022102,
+            "name": "ANGEL OLIVER GUZMAN RIVERA"
+        },
+        {
+            "id": 597459,
+            "name": "ARS META SALUD/SINAT"
+        }
+    ]
+}

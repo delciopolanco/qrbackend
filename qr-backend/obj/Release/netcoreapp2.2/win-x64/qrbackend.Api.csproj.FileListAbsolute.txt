@@ -1,0 +1,56 @@
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\hostpolicy.dll
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\hostfxr.dll
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\qrbackend.Api.exe
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\qrbackend.Api.deps.json
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\qrbackend.Api.runtimeconfig.json
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\qrbackend.Api.runtimeconfig.dev.json
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\qrbackend.Api.dll
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\qrbackend.Api.pdb
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\amqmdnetstd.dll
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\qrbackend.Models.dll
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\qrbackend.Models.pdb
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\obj\Release\netcoreapp2.2\win-x64\qrbackend.Api.csprojAssemblyReference.cache
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\obj\Release\netcoreapp2.2\win-x64\qrbackend.Api.csproj.CoreCompileInputs.cache
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\obj\Release\netcoreapp2.2\win-x64\qrbackend.Api.RazorAssemblyInfo.cache
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\obj\Release\netcoreapp2.2\win-x64\qrbackend.Api.RazorAssemblyInfo.cs
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\obj\Release\netcoreapp2.2\win-x64\qrbackend.Api.AssemblyInfoInputs.cache
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\obj\Release\netcoreapp2.2\win-x64\qrbackend.Api.AssemblyInfo.cs
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\obj\Release\netcoreapp2.2\win-x64\qrbackend.Api.RazorTargetAssemblyInfo.cache
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\obj\Release\netcoreapp2.2\win-x64\qrbackend.Api.csproj.CopyComplete
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\obj\Release\netcoreapp2.2\win-x64\qrbackend.Api.dll
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\obj\Release\netcoreapp2.2\win-x64\qrbackend.Api.pdb
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\lib\x64\liblept1742.dll
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\lib\x64\libtesseract3051.dll
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\lib\x64\tesseract.exe
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\lib\x86\tesseract.exe
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\lib\x86\liblept1742.dll
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\lib\x86\libtesseract3051.dll
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\Tesseract.NetCore.dll
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\Tesseract.NetCore.pdb
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\SwaggerPaymeApi.XML
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\MockData\companies.json
+C:\Users\DP312640\Documents\Proyects\QRApp\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\MockData\transactionHistory.json
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\hostpolicy.dll
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\hostfxr.dll
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\qrbackend.Api.exe
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\MockData\companies.json
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\MockData\transactionHistory.json
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\SwaggerPaymeApi.XML
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\qrbackend.Api.deps.json
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\qrbackend.Api.runtimeconfig.json
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\qrbackend.Api.runtimeconfig.dev.json
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\qrbackend.Api.dll
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\qrbackend.Api.pdb
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\amqmdnetstd.dll
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\qrbackend.Models.dll
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qr-backend\bin\Release\netcoreapp2.2\win-x64\qrbackend.Models.pdb
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qr-backend\obj\Release\netcoreapp2.2\win-x64\qrbackend.Api.csprojAssemblyReference.cache
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qr-backend\obj\Release\netcoreapp2.2\win-x64\qrbackend.Api.csproj.CoreCompileInputs.cache
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qr-backend\obj\Release\netcoreapp2.2\win-x64\qrbackend.Api.RazorAssemblyInfo.cache
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qr-backend\obj\Release\netcoreapp2.2\win-x64\qrbackend.Api.RazorAssemblyInfo.cs
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qr-backend\obj\Release\netcoreapp2.2\win-x64\qrbackend.Api.AssemblyInfoInputs.cache
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qr-backend\obj\Release\netcoreapp2.2\win-x64\qrbackend.Api.AssemblyInfo.cs
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qr-backend\obj\Release\netcoreapp2.2\win-x64\qrbackend.Api.RazorTargetAssemblyInfo.cache
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qr-backend\obj\Release\netcoreapp2.2\win-x64\qrbackend.Api.csproj.CopyComplete
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qr-backend\obj\Release\netcoreapp2.2\win-x64\qrbackend.Api.dll
+\\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qr-backend\obj\Release\netcoreapp2.2\win-x64\qrbackend.Api.pdb
