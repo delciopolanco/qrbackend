@@ -12,7 +12,7 @@ namespace qr_backend
             WebHost.CreateDefaultBuilder (args)
             .UseStartup<Startup> ()
             .UseKestrel ()
-            .UseUrls("http://172.20.234.53:5000")
+            .UseUrls("http://172.17.103.210:5000")
             .UseIISIntegration ()
             .ConfigureKestrel ((context, options) => {
                 // Set properties and call methods on options
