@@ -25,6 +25,7 @@ namespace qrbackend.Models.Products
         public string CurrencySymbol { get; set; }
         public string Name { get; set; }
         public string Subtype { get; set; }
+        public bool WasMigrate { get; set; }
 
 
     }

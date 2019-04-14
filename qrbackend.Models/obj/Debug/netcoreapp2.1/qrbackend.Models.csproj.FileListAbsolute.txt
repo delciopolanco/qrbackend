@@ -48,3 +48,12 @@ C:\QRProject\qr-backend\qrbackend.Models\obj\Debug\netcoreapp2.1\qrbackend.Model
 \\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qrbackend.Models\bin\Debug\netcoreapp2.1\qrbackend.Models.deps.json
 \\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qrbackend.Models\bin\Debug\netcoreapp2.1\qrbackend.Models.dll
 \\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qrbackend.Models\bin\Debug\netcoreapp2.1\qrbackend.Models.pdb
+C:\APIPayme\qrbackend\qrbackend.Models\bin\Debug\netcoreapp2.1\qrbackend.Models.deps.json
+C:\APIPayme\qrbackend\qrbackend.Models\bin\Debug\netcoreapp2.1\qrbackend.Models.dll
+C:\APIPayme\qrbackend\qrbackend.Models\bin\Debug\netcoreapp2.1\qrbackend.Models.pdb
+C:\APIPayme\qrbackend\qrbackend.Models\obj\Debug\netcoreapp2.1\qrbackend.Models.csprojAssemblyReference.cache
+C:\APIPayme\qrbackend\qrbackend.Models\obj\Debug\netcoreapp2.1\qrbackend.Models.csproj.CoreCompileInputs.cache
+C:\APIPayme\qrbackend\qrbackend.Models\obj\Debug\netcoreapp2.1\qrbackend.Models.AssemblyInfoInputs.cache
+C:\APIPayme\qrbackend\qrbackend.Models\obj\Debug\netcoreapp2.1\qrbackend.Models.AssemblyInfo.cs
+C:\APIPayme\qrbackend\qrbackend.Models\obj\Debug\netcoreapp2.1\qrbackend.Models.dll
+C:\APIPayme\qrbackend\qrbackend.Models\obj\Debug\netcoreapp2.1\qrbackend.Models.pdb

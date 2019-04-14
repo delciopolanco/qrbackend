@@ -29,7 +29,7 @@ namespace qrbackend.Models.Enums
         CheckingAccount = 3,
         [Description("Tarjetas de Credito")]
         CreditCard = 4,
-        [Description("GC")]
+        [Description("GM")]
         GiftCard = 6
     }
 

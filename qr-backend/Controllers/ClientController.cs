@@ -109,7 +109,7 @@ namespace qrbackend.Api.Controllers
         [ProducesResponseType(401)]
         [ProducesResponseType(500)]
         [ProducesResponseType(502)]
-        public async Task<IActionResult> GetBenericiairy(string id)
+        public async Task<IActionResult> GetBeneficiary(string id)
         {
             Beneficiary beneficiaryResponse = new Beneficiary();
 
@@ -166,7 +166,11 @@ namespace qrbackend.Api.Controllers
                     {
                         Id = x.beneficiaryProductId,
                         Product = x.value,
-                        ProductType = (ProductType)x.beneficiaryProductTypeId
+                        ProductType = (ProductType)x.beneficiaryProductTypeId,
+                        Currency = x.currency,
+                        CurrencySymbol = x.currencySymbol,
+                        WasMigrate = x.wasMigrate
+                        
                     }).ToList() : new List<BeneficiaryProducts>()
                 };
             }
@@ -338,7 +342,8 @@ namespace qrbackend.Api.Controllers
                         entity = product.ProviderName,
                         name = product.Name,
                         subtype = product.Subtype,
-                        message = product.Message
+                        message = product.Message,
+                        wasMigrate = product.WasMigrate
                     });
                 }
                 
@@ -434,7 +439,10 @@ namespace qrbackend.Api.Controllers
                     ClientName = response.Data.FullName,
                     Image = response.Data.PhotoImge,
                     ProductType = Enums.GetValueFromDescription<ProductType2>(response.Data.Type),
-                    Status = response.Data.Status
+                    Status = response.Data.Status,
+                    Currency = response.Data.Currency,
+                    CurrencySymbol = response.Data.CurrencySymbol,
+                    HasDollar = response.Data.HasDollar
                 };
             }
             catch (Exception ex)

@@ -10,5 +10,8 @@ namespace qrbackend.Models.ViewModels.Front
         public int Id { get; set; }
         public string Product { get; set; }
         public ProductType ProductType { get; set; }
+        public string Currency { get; set; }
+        public string CurrencySymbol { get; set; }
+        public bool WasMigrate { get; set; }
     }
 }

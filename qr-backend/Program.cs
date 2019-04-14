@@ -8,14 +8,20 @@ namespace qr_backend
             CreateWebHostBuilder (args).Build ().Run ();
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder (string[] args) =>
-            WebHost.CreateDefaultBuilder (args)
-            .UseStartup<Startup> ()
-            .UseKestrel ()
-            .UseUrls("http://172.20.234.53:5000")
-            .UseIISIntegration ()
-            .ConfigureKestrel ((context, options) => {
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+            WebHost.CreateDefaultBuilder(args)
+            .UseStartup<Startup>()
+            .UseKestrel()
+            //.UseUrls("http://172.20.234.53:5000")
+            .UseUrls("http://172.20.235.166:8080")
+            .UseIISIntegration()
+            .ConfigureKestrel((context, options) =>
+            {
                 // Set properties and call methods on options
             });
+
+    //    public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+    //WebHost.CreateDefaultBuilder(args)
+    //    .UseStartup<Startup>();
     }
 }

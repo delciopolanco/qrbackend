@@ -100,3 +100,24 @@ C:\QRProject\qr-backend\qr-backend\obj\Debug\netcoreapp2.2\qrbackend.Api.csproj.
 \\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qr-backend\obj\Debug\netcoreapp2.2\qrbackend.Api.csproj.CopyComplete
 \\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qr-backend\obj\Debug\netcoreapp2.2\qrbackend.Api.dll
 \\est0301tec020\Delcio Polanco Share\QRApp\qr-backendSalvador2\qr-backend\qr-backend\obj\Debug\netcoreapp2.2\qrbackend.Api.pdb
+C:\APIPayme\qrbackend\qr-backend\bin\Debug\netcoreapp2.2\MockData\companies.json
+C:\APIPayme\qrbackend\qr-backend\bin\Debug\netcoreapp2.2\MockData\transactionHistory.json
+C:\APIPayme\qrbackend\qr-backend\bin\Debug\netcoreapp2.2\SwaggerPaymeApi.XML
+C:\APIPayme\qrbackend\qr-backend\bin\Debug\netcoreapp2.2\qrbackend.Api.deps.json
+C:\APIPayme\qrbackend\qr-backend\bin\Debug\netcoreapp2.2\qrbackend.Api.runtimeconfig.json
+C:\APIPayme\qrbackend\qr-backend\bin\Debug\netcoreapp2.2\qrbackend.Api.runtimeconfig.dev.json
+C:\APIPayme\qrbackend\qr-backend\bin\Debug\netcoreapp2.2\qrbackend.Api.dll
+C:\APIPayme\qrbackend\qr-backend\bin\Debug\netcoreapp2.2\qrbackend.Api.pdb
+C:\APIPayme\qrbackend\qr-backend\bin\Debug\netcoreapp2.2\amqmdnetstd.dll
+C:\APIPayme\qrbackend\qr-backend\bin\Debug\netcoreapp2.2\qrbackend.Models.dll
+C:\APIPayme\qrbackend\qr-backend\bin\Debug\netcoreapp2.2\qrbackend.Models.pdb
+C:\APIPayme\qrbackend\qr-backend\obj\Debug\netcoreapp2.2\qrbackend.Api.csprojAssemblyReference.cache
+C:\APIPayme\qrbackend\qr-backend\obj\Debug\netcoreapp2.2\qrbackend.Api.csproj.CoreCompileInputs.cache
+C:\APIPayme\qrbackend\qr-backend\obj\Debug\netcoreapp2.2\qrbackend.Api.RazorAssemblyInfo.cache
+C:\APIPayme\qrbackend\qr-backend\obj\Debug\netcoreapp2.2\qrbackend.Api.RazorAssemblyInfo.cs
+C:\APIPayme\qrbackend\qr-backend\obj\Debug\netcoreapp2.2\qrbackend.Api.AssemblyInfoInputs.cache
+C:\APIPayme\qrbackend\qr-backend\obj\Debug\netcoreapp2.2\qrbackend.Api.AssemblyInfo.cs
+C:\APIPayme\qrbackend\qr-backend\obj\Debug\netcoreapp2.2\qrbackend.Api.RazorTargetAssemblyInfo.cache
+C:\APIPayme\qrbackend\qr-backend\obj\Debug\netcoreapp2.2\qrbackend.Api.csproj.CopyComplete
+C:\APIPayme\qrbackend\qr-backend\obj\Debug\netcoreapp2.2\qrbackend.Api.dll
+C:\APIPayme\qrbackend\qr-backend\obj\Debug\netcoreapp2.2\qrbackend.Api.pdb

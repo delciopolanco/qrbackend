@@ -121,7 +121,7 @@
             <returns></returns>
             <response code="200"></response>
         </member>
-        <member name="M:qrbackend.Api.Controllers.ClientController.GetBenericiairy(System.String)">
+        <member name="M:qrbackend.Api.Controllers.ClientController.GetBeneficiary(System.String)">
             <summary>
             Metodo para obtener un beneficiario y sus productos asociados
             </summary>

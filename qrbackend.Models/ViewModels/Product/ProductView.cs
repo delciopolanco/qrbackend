@@ -18,5 +18,6 @@ namespace qrbackend.Models.ViewModels.Product
         public string sender { get; set; }
         public string message { get; set; }
         public bool isDefault { get; set; }
+        public bool wasMigrate { get; set; }
     }
 }
