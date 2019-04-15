@@ -22,7 +22,7 @@ namespace qrbackend.Api.Controllers
     /// Api registro de cliente
     /// </summary>
     [Route("api/[controller]")]
-    [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
+    [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true, Duration = 0)]
     [ApiController]
     public class RegisterController : Controller
     {
@@ -40,7 +40,7 @@ namespace qrbackend.Api.Controllers
         /// Validacion del registro con Tecnologia OCR
         /// </summary>
         [HttpPost("Document")]
-        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
+        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true, Duration = 0)]
         [ProducesResponseType(typeof(RegistrationResponse), 200)]
         [ProducesResponseType(typeof(FrontStatusCode), 400)]
         [ProducesResponseType(500)]
@@ -90,7 +90,7 @@ namespace qrbackend.Api.Controllers
         /// Registro de nuevos clientes
         /// </summary>
         [HttpPost()]
-        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
+        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true, Duration = 0)]
         [ProducesResponseType(200)]
         [ProducesResponseType(typeof(FrontStatusCode), 400)]
         [ProducesResponseType(500)]

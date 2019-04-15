@@ -16,6 +16,7 @@ using qrbackend.Models.ViewModels.Pinqrcode;
 using Newtonsoft.Json;
 using qr_backend.Util;
 using qrbackend.Models.RequestBroker;
+using qrbackend.Models.ViewModels.Front.TransactionModel;
 
 namespace qrbackend.Api.Controllers
 {
@@ -23,7 +24,7 @@ namespace qrbackend.Api.Controllers
     /// Api validacion, registro y obentecion de transacciones.
     /// </summary>
     [Route("api/[controller]")]
-    [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
+    [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true, Duration = 0)]
     [ApiController]
     [Authorize]
     public class TransactionController : Controller
@@ -39,7 +40,7 @@ namespace qrbackend.Api.Controllers
         /// Obtencion de un nuevo token de transación.
         /// </summary>
         /// <returns></returns>
-        [HttpGet("Token/{id}")]
+        [HttpGet("Token/{DeviceId}")]
         [ProducesResponseType(200)]
         [ProducesResponseType(typeof(FrontStatusCode), 400)]
         [ProducesResponseType(401)]
@@ -119,6 +120,87 @@ namespace qrbackend.Api.Controllers
 
             await Task.CompletedTask;
             return Ok(listTransaction);
+        }
+
+        [HttpGet("ListHoldHistory/{paymeId}")]
+        [ProducesResponseType(typeof(List<HistoryHoldTransaction>), 200)]
+        [ProducesResponseType(typeof(FrontStatusCode), 400)]
+        [ProducesResponseType(401)]
+        [ProducesResponseType(502)]
+        [ProducesResponseType(500)]
+        public async Task<IActionResult> GetListHoldTransactions(string paymeId)
+        {
+
+            List<HistoryHoldTransaction> listTransaction = new List<HistoryHoldTransaction>();
+
+            try
+            {
+                JwtData jwt = (JwtData)RouteData.Values["jwtData"];
+
+                var responseListTransaction = _broker.SendBroker<JsonRequestGeneric>(
+                    new JsonRequestGeneric("GetGeneric")
+                    {
+                        EndPoint = "holdTransaction/getListByPaymeId?paymeId=" + paymeId
+                    }
+                );
+
+                if (responseListTransaction == null && string.IsNullOrEmpty(responseListTransaction.CodigoError))
+                    return StatusCode(502, "Error de comunicacion con los sistemas externos.");
+
+                if (responseListTransaction.CodigoError != Enums.GetEnumDescription(ResponseCode.Success))
+                    return BadRequest(new FrontStatusCode(!string.IsNullOrEmpty(responseListTransaction.DescripcionError) ? responseListTransaction.DescripcionError : "Hubo un inconveniente al tratar de recuperar los beneficiarios"));
+
+                if (responseListTransaction.Data != null)
+                    listTransaction = JsonConvert.DeserializeObject<List<HistoryHoldTransaction>>(responseListTransaction.Data.ToString());
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, string.Format($"{Enums.GetEnumDescription(ApiMessages.DefaultError)} {ex.Message} "));
+            }
+
+            await Task.CompletedTask;
+            return Ok(listTransaction);
+        }
+
+        [HttpGet("HoldHistory")]
+        [ProducesResponseType(typeof(HistoryHoldTransaction), 200)]
+        [ProducesResponseType(typeof(FrontStatusCode), 400)]
+        [ProducesResponseType(401)]
+        [ProducesResponseType(502)]
+        [ProducesResponseType(500)]
+        public async Task<IActionResult> GetHoldTransaction(int holdTransactionId)
+        {
+
+            HistoryHoldTransaction holdTransaction = null;
+            try
+            {
+                JwtData jwt = (JwtData)RouteData.Values["jwtData"];
+
+                var responseListTransaction = _broker.SendBroker<JsonRequestGeneric>(
+                    new JsonRequestGeneric("GetGeneric")
+                    {
+                        EndPoint = "holdTransaction/get?id=" + holdTransactionId
+                    }
+                );
+
+                if (responseListTransaction == null && string.IsNullOrEmpty(responseListTransaction.CodigoError))
+                    return StatusCode(502, "Error de comunicacion con los sistemas externos.");
+
+                if (responseListTransaction.CodigoError != Enums.GetEnumDescription(ResponseCode.Success))
+                    return BadRequest(new FrontStatusCode(!string.IsNullOrEmpty(responseListTransaction.DescripcionError) ? responseListTransaction.DescripcionError : "Hubo un inconveniente al tratar de recuperar los beneficiarios"));
+
+                if (responseListTransaction.Data != null)
+                    holdTransaction = JsonConvert.DeserializeObject<HistoryHoldTransaction>(responseListTransaction.Data.ToString());
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, string.Format($"{Enums.GetEnumDescription(ApiMessages.DefaultError)} {ex.Message} "));
+            }
+
+            await Task.CompletedTask;
+            return Ok(holdTransaction);
         }
 
         [HttpGet("GetQrPin")]
@@ -217,8 +299,8 @@ namespace qrbackend.Api.Controllers
                 var trxMapped = mapper(trx);
 
                 trxMapped.EndPoint = "transaction/send";
-                trxMapped.documentIdSender = jwt.UserName;
-                trxMapped.documentTypeSender = jwt.DocumentType;
+                trxMapped.documentId = jwt.UserName;
+                trxMapped.documentType = jwt.DocumentType;
                 trxMapped.FunctionName = Utilitary.postGenericBroker; 
 
                 var saveTransaction = _broker.SendBroker<TransactionBroker>(trxMapped);

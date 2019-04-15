@@ -1,13 +1,14 @@
 ﻿using qrbackend.Models.Entities;
+using qrbackend.Models.ViewModels.Generic;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace qrbackend.Models.ViewModels.Beneficiary
 {
-    public class AddOrUpdateBeneficiary : MQResponse3
+    public class AddOrUpdateBeneficiary : JsonResponseGeneric
     {
-        public string BeneficiaryId { get; set; }
+        public int BeneficiaryId { get; set; }
 
         public string DocumentId { get; set; }
 
@@ -15,9 +16,14 @@ namespace qrbackend.Models.ViewModels.Beneficiary
 
         public string BeneficiaryProducts { get; set; }
 
-        public AddOrUpdateBeneficiary()
+        public string EndPoint { get; set; }
+
+        public string FunctionName { get; set; }
+
+        public AddOrUpdateBeneficiary(string functionName)
         {
-            FunctionName = "AddOrUpdateBeneficiary";
+            FunctionName = functionName;
+            EndPoint = "beneficiary/addOrUpdate";
         }
     }
 }

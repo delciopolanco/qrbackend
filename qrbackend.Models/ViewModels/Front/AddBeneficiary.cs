@@ -7,6 +7,8 @@ namespace qrbackend.Models.ViewModels.Front
 {
     public class AddBeneficiary
     {
+        public int Id { get; set; }
+
         [Required]
         public string Name { get; set; }
 

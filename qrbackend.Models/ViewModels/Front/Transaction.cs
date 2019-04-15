@@ -15,13 +15,11 @@ namespace qrbackend.Models.ViewModels.Front
         public string creditProductCurrency { get; set; }
         public string creditProductCurrencySymbol { get; set; }
         public int beneficiaryId { get; set; }
-        public int currency { get; set; }
-        public int currencySymbol { get; set; }
+        public string currency { get; set; }
+        public string currencySymbol { get; set; }
         public decimal amount { get; set; }
         public decimal tax { get; set; }
         public decimal total { get; set; }
-        public decimal foreignExchangeAmount { get; set; }
-        public decimal exchangeRate { get; set; }
         public string code { get; set; } //Token de seguridad
         public int debitProductType { get; set; }
         public bool debitProductMigrate { get; set; }
@@ -31,9 +29,13 @@ namespace qrbackend.Models.ViewModels.Front
         public string debitProductAlias { get; set; }
         public string debitProductName { get; set; }
         public string debitProductBalance { get; set; }
-        public string message { get; set; }
+        public string description { get; set; }
         public bool ongDonation { get; set; }
-        public string ongName { get; set; }
+        public decimal ongAmount { get; set; }
+        public string documentId { get; set; }
+        public string documentType { get; set; }
+        public string senderPaymeId { get; set; }
+        public string receiverPaymeId { get; set; }
 
     }
 }

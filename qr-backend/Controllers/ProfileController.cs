@@ -52,7 +52,7 @@ namespace qr_backend.Controllers
         /// <returns></returns>
         /// <response code="200"></response>
         [HttpPost("Notification")]
-        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
+        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true, Duration = 0)]
         [ProducesResponseType(200)]
         [ProducesResponseType(typeof(FrontStatusCode), 400)]
         [ProducesResponseType(401)]
@@ -140,7 +140,7 @@ namespace qr_backend.Controllers
         /// <returns></returns>
         /// <response code="200"></response>
         [HttpGet("PaymeId/{id}")]
-        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
+        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true, Duration = 0)]
         [ProducesResponseType(200)]
         [ProducesResponseType(typeof(FrontStatusCode), 400)]
         [ProducesResponseType(401)]
@@ -176,7 +176,7 @@ namespace qr_backend.Controllers
         /// <returns></returns>
         /// <response code="200"></response>
         [HttpPost("PaymeId")]
-        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
+        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true, Duration = 0)]
         [ProducesResponseType(200)]
         [ProducesResponseType(typeof(FrontStatusCode), 400)]
         [ProducesResponseType(401)]
@@ -234,7 +234,7 @@ namespace qr_backend.Controllers
         /// <returns></returns>
         /// <response code="200"></response>
         [HttpGet("Companies")]
-        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
+        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true, Duration = 0)]
         [ProducesResponseType(typeof(CompaniesList), 200)]
         [ProducesResponseType(typeof(FrontStatusCode), 400)]
         [ProducesResponseType(401)]
@@ -282,7 +282,7 @@ namespace qr_backend.Controllers
         /// <returns></returns>
         /// <response code="200"></response>
         [HttpGet()]
-        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
+        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true, Duration = 0)]
         [ProducesResponseType(typeof(Profile), 200)]
         [ProducesResponseType(typeof(FrontStatusCode), 400)]
         [ProducesResponseType(401)]

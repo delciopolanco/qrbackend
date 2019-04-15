@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace qrbackend.Models.ViewModels.Front
+namespace qrbackend.Models.ViewModels.Front.TransactionModel
 {
     public class TransactionQrCode
     {

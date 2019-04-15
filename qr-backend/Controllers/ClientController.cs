@@ -16,6 +16,7 @@ using qrbackend.Models.ViewModels;
 using qrbackend.Models.ViewModels.Beneficiary;
 using qrbackend.Models.ViewModels.Front;
 using qrbackend.Models.ViewModels.Front.Client;
+using qrbackend.Models.ViewModels.Front.TransactionModel;
 using qrbackend.Models.ViewModels.Generic;
 using qrbackend.Models.ViewModels.Product;
 
@@ -56,7 +57,7 @@ namespace qrbackend.Api.Controllers
         [ProducesResponseType(401)]
         [ProducesResponseType(500)]
         [ProducesResponseType(502)]
-        public async Task<IActionResult> GetBenericiairyList()
+        public async Task<IActionResult> GetBeneficiaryList()
         {
             List<BeneficiaryFrontList> beneficiaryResponse = new List<BeneficiaryFrontList>();
 
@@ -146,7 +147,9 @@ namespace qrbackend.Api.Controllers
                    {
                        beneficiaryId = x.beneficiaryProductId,
                        value = x.value,
-                       beneficiaryProductTypeId = x.beneficiaryProductTypeId
+                       beneficiaryProductTypeId = x.beneficiaryProductTypeId,
+                       currency = x.currency,
+                       currencySymbol = x.currencySymbol
                    }).ToList() : new List<BeneficiaryProduct>();
 
 
@@ -227,7 +230,7 @@ namespace qrbackend.Api.Controllers
         /// </remarks>
         /// <returns></returns>
         /// <response code="200"></response>
-        [HttpPut("Beneficiary/{id}")]
+        [HttpPut("Beneficiary")]
         [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
         [ProducesResponseType(200)]
         [ProducesResponseType(typeof(FrontStatusCode), 400)]
@@ -309,7 +312,7 @@ namespace qrbackend.Api.Controllers
         /// <returns></returns>
         /// <response code="200"></response>
         [HttpGet("Products")]
-        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
+        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true, Duration = 0)]
         [ProducesResponseType(typeof(List<Product>), 200)]
         [ProducesResponseType(typeof(FrontStatusCode), 400)]
         [ProducesResponseType(401)]
@@ -366,8 +369,9 @@ namespace qrbackend.Api.Controllers
         {
             JwtData jwt = (JwtData)RouteData.Values["jwtData"];
 
-            var _beneficiary = new AddOrUpdateBeneficiary()
+            var _beneficiary = new AddOrUpdateBeneficiary(Utilitary.postGenericBroker)
             {
+                BeneficiaryId = Int16.Parse(beneficiary.Id),
                 DocumentId = jwt.UserName,
                 FullName = beneficiary.Name,
                 BeneficiaryProducts = SplitBeneficiaryProducts(beneficiary.PaymeId, beneficiary.Phones, beneficiary.Products)
@@ -375,7 +379,7 @@ namespace qrbackend.Api.Controllers
 
             if (StringHelper.IsPropertyExist(beneficiary, "Id"))
             {
-                _beneficiary.BeneficiaryId = beneficiary.Id;
+                _beneficiary.BeneficiaryId = Convert.ToInt16(beneficiary.Id);
             }
 
             await Task.CompletedTask;
@@ -393,7 +397,10 @@ namespace qrbackend.Api.Controllers
             foreach (var p in phones)
                 beneficiaries = string.Concat(beneficiaries, $"{(int)p.ProductType};{p.Product}|");
 
-            return string.Concat(_paymeId, beneficiaries.Remove(beneficiaries.Length - 1));
+            if(beneficiaries.Length > 0)
+                return string.Concat(_paymeId, beneficiaries.Remove(beneficiaries.Length - 1));
+            return string.Concat(_paymeId, beneficiaries);
+
         }
 
 
@@ -406,7 +413,7 @@ namespace qrbackend.Api.Controllers
         /// <returns></returns>
         /// <response code="200"></response>
         [HttpGet("Account/{accountNumber}")]
-        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
+        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true, Duration = 0)]
         [ProducesResponseType(typeof(ClientValidationProduct), 200)]
         [ProducesResponseType(typeof(FrontStatusCode), 400)]
         [ProducesResponseType(401)]
@@ -463,7 +470,7 @@ namespace qrbackend.Api.Controllers
         /// <returns></returns>
         /// <response code="200"></response>
         [HttpGet("PaymeId/{paymeId}")]
-        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
+        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true, Duration = 0)]
         [ProducesResponseType(typeof(ClientValidationProduct), 200)]
         [ProducesResponseType(typeof(FrontStatusCode), 400)]
         [ProducesResponseType(401)]
@@ -516,7 +523,7 @@ namespace qrbackend.Api.Controllers
         /// <returns></returns>
         /// <response code="200"></response>
         [HttpPost("SaveImage")]
-        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
+        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true, Duration = 0)]
         [ProducesResponseType(200)]
         [ProducesResponseType(typeof(FrontStatusCode), 400)]
         [ProducesResponseType(401)]
@@ -562,7 +569,7 @@ namespace qrbackend.Api.Controllers
         /// <returns></returns>
         /// <response code="200"></response>
         [HttpPost("SavingsPlan")]
-        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
+        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true, Duration = 0)]
         [ProducesResponseType(200)]
         [ProducesResponseType(typeof(FrontStatusCode), 400)]
         [ProducesResponseType(401)]
@@ -599,15 +606,15 @@ namespace qrbackend.Api.Controllers
         }
 
         [HttpGet("GetSavingsPlan")]
-        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
-        [ProducesResponseType(typeof(TransactionQrCodeResp), 200)]
-        [ProducesResponseType(typeof(TransactionQrCodeResp), 400)]
+        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true, Duration = 0)]
+        [ProducesResponseType(typeof(SavingPlan), 200)]
+        [ProducesResponseType(typeof(SavingPlan), 400)]
         [ProducesResponseType(401)]
         [ProducesResponseType(500)]
         [ProducesResponseType(502)]
         public async Task<IActionResult> GetSavingsPlan()
         {
-            SavingPlan savingPlan;
+            SavingPlan savingPlan = null;
             try
             {
                 JwtData jwt = (JwtData)RouteData.Values["jwtData"];
@@ -615,7 +622,7 @@ namespace qrbackend.Api.Controllers
                 var responseSavingPlan = _broker.SendBroker<JsonRequestGeneric>(
                     new JsonRequestGeneric("GetGeneric")
                     {
-                        EndPoint = "client/saveSavingsPlan?documentId="+ jwt.UserName +"&" + jwt.DocumentType
+                        EndPoint = "client/getSavingsPlan?DocumentId="+ jwt.UserName +"&DocumentType=" + jwt.DocumentType
                     }
                 );
 
@@ -625,8 +632,8 @@ namespace qrbackend.Api.Controllers
                 if (responseSavingPlan.CodigoError != Enums.GetEnumDescription(ResponseCode.Success))
                     return BadRequest(new FrontStatusCode(!string.IsNullOrEmpty(responseSavingPlan.DescripcionError) ? responseSavingPlan.DescripcionError : "Hubo un inconveniente al tratar de obtener el plan de ahorro de un cliente"));
 
-
-            savingPlan = JsonConvert.DeserializeObject<SavingPlan>(responseSavingPlan.Data.ToString());
+                if (responseSavingPlan.Data != null)
+                    savingPlan = JsonConvert.DeserializeObject<SavingPlan>(responseSavingPlan.Data.ToString());
 
             }
             catch (Exception ex)

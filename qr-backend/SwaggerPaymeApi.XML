@@ -111,7 +111,7 @@
             </summary>
             <param name="broker"></param>
         </member>
-        <member name="M:qrbackend.Api.Controllers.ClientController.GetBenericiairyList">
+        <member name="M:qrbackend.Api.Controllers.ClientController.GetBeneficiaryList">
             <summary>
             Metodo para obtener el listado de beneficiarios
             </summary>
